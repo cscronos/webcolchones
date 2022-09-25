@@ -1,44 +1,49 @@
+* {
+  margin: 0;
+}
+
 body {
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif; 
-    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; 
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  height: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+header h1, img{
+  font-size: 60px;
+  padding: 40px 0;
+  /* color: white; */
+  color: #333;
+  
 }
 
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  overflow: hidden;
+  /* El desbordamiento se recorta y el resto del contenido será invisible */
+  background-color: #333;
+  /* position: fixed; */
+  position: relative;
+  top: 0;
+  width: 100%;
   }
 
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
   
-  .navbar a:hover {
-    background: #ddd;
-    color: black;
-  }
-  
-  .main {
-    padding: 16px;
-    margin-top: 30px;
-    height: 1500px; /* Used in this example to enable scrolling */
-  }
-
-  #meme {
-    width: 100%;
-  }
-
-  #gato {
-    color: #ddd;
-  }
- 
-  
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
